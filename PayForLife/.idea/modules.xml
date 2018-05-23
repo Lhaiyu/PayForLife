@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/PayForLife.iml" filepath="$PROJECT_DIR$/PayForLife.iml" />
+      <module fileurl="file://E:\pay\PayForLife\PayForLife.iml" filepath="E:\pay\PayForLife\PayForLife.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://E:\pay\PayForLife\app\app.iml" filepath="E:\pay\PayForLife\app\app.iml" />
     </modules>
   </component>
 </project>

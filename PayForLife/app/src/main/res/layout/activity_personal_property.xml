@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/GridLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="5"
+        android:orientation="horizontal"
+        android:rowCount="7"
+        tools:context="com.example.administrator.payforlife.Activity.Personal_propertyActivity">
+        <Button
+            android:layout_columnSpan="1"
+            android:layout_width="48dp"
+            android:layout_height="40dp"
+            android:background="#46A3FF"
+            android:textColor="#ffffff"
+            android:text="返回"
+            android:textSize="18sp"/>
+
+        <Button
+            android:layout_columnSpan="1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="#46A3FF"
+            android:textColor="#ffffff"
+            android:text="余额"
+            android:textSize="18sp"/>
+
+        <View
+            android:layout_columnSpan="1"
+
+            android:layout_width="148dp"
+            android:layout_height="40dp"
+            android:background="#46A3FF"
+            android:textColor="#ffffff"
+            />
+
+        <Button
+            android:layout_columnSpan="1"
+
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="#46A3FF"
+            android:textColor="#ffffff"
+            android:text="明细"
+            android:textSize="18sp"/>
+        <View
+            android:layout_columnSpan="1"
+
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:background="#46A3FF"
+            android:textColor="#ffffff"
+            android:text="111" />
+
+        <TextView
+            android:layout_columnSpan="5"
+            android:background="#46A3FF"
+            android:textColor="#ffffff"
+            android:layout_width="400dp"
+            android:layout_height="40dp"
+            android:text="账户余额（元）"
+
+            android:textSize="18sp"
+            />
+        <TextView
+            android:layout_columnSpan="5"
+            android:layout_gravity="fill"
+            android:background="#46A3FF"
+            android:textColor="#ffffff"
+            android:text="99.99"
+            android:textSize="92sp" />
+
+        <ImageButton
+
+            android:layout_width="48dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_columnSpan="1"
+            android:background="#46A3FF"
+            android:id="@+id/ImageButton_chong"
+            />
+
+        <TextView
+            android:layout_width="88dp"
+            android:layout_height="40dp"
+            android:layout_columnSpan="1"
+            android:background="#46A3FF"
+            android:text="充值"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_columnSpan="3"
+            android:background="#46A3FF" />
+        <ImageButton
+
+            android:layout_width="48dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_columnSpan="1"
+            android:background="#46A3FF"
+            android:id="@+id/ImageButton_ti"
+            />
+
+        <TextView
+            android:layout_width="88dp"
+            android:layout_height="40dp"
+            android:layout_columnSpan="1"
+            android:background="#46A3FF"
+            android:text="提现"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_columnSpan="3"
+            android:background="#46A3FF" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_columnSpan="5"
+            android:background="#ffffff" />
+        <TextView
+            android:layout_width="400dp"
+            android:layout_height="40dp"
+            android:layout_columnSpan="5"
+            android:background="#46A3FF"
+            android:gravity="center"
+            android:text="信用贷款|常见问题"
+            android:textSize="14sp"/>
+    </GridLayout>
+
+
+
+
+
+
