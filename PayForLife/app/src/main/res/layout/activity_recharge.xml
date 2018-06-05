@@ -13,7 +13,7 @@
             android:layout_width="48dp"
             android:layout_height="40dp"
             android:background="#ffffff"
-            android:textColor="#46A3FF"
+            android:textColor="@color/main"
             android:text="返回"
             android:textSize="18sp"
             android:onClick="goback"
@@ -91,7 +91,7 @@
             android:textColor="#ffffff"
             android:gravity="center"
             android:text="下一步"
-            android:background="#46A3FF"/>
+            android:background="@color/main"/>
         <View
 
             android:layout_columnSpan="1"

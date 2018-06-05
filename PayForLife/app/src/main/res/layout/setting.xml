@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/grey_200">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,15 +16,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="10dp"
+            >
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="账号管理"/>
+                android:text="账号管理"
+                android:textSize="18dp"
+                android:background="@drawable/set"/>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="邮箱"/>
+                android:text="邮箱"
+                android:textSize="18dp"
+                android:background="@drawable/set"/>
         </LinearLayout>
 
         <LinearLayout
@@ -32,18 +41,33 @@
             android:layout_marginTop="30dp"
             android:orientation="vertical">
 
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="安全中心"/>
+                android:text="安全中心"
+                android:textSize="18dp"
+                android:background="@drawable/set"/>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"/>
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="刷脸设置"/>
+                android:text="刷脸设置"
+                android:textSize="18dp"
+                android:background="@drawable/set"/>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"/>
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="声音锁"/>
+                android:text="声音锁"
+                android:textSize="18dp"
+                android:background="@drawable/set"/>
 
         </LinearLayout>
 
@@ -55,7 +79,9 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="通用设置" />
+                android:text="通用设置"
+                android:textSize="18dp"
+                android:background="@drawable/set"/>
 
         </LinearLayout>
 
@@ -67,6 +93,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="#8000"
+        android:background="@color/white"
+        android:textSize="20dp"
         android:text="退出登录"/>
 </RelativeLayout>

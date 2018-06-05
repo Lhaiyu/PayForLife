@@ -61,7 +61,7 @@ public class RegisterActivity extends AppCompatActivity {
                             String mail = etregistmail.getText().toString();
                             final String username = etregistname.getText().toString();
                             String password = etregistpwd.getText().toString();
-                            String address = "http://10.7.85.132:8080/OkHttpServerForAndroid/register.action";
+                            String address = "http://10.7.85.136:8080/OkHttpServerForAndroid/register.action";
                             OkHttpClient okHttpClient = new OkHttpClient();
                             FormBody.Builder builder = new FormBody.Builder();
                             builder.add("email",mail);

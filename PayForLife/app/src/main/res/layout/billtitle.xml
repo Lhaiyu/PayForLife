@@ -2,15 +2,15 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="?attr/actionBarSize"
-    android:background="#66CDAA">
+    android:background="@color/main">
 
     <Button
         android:layout_width="60dp"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentTop="true"
-        android:background="#66CDAA"
-        android:textColor="#000000"
+        android:background="@color/main"
+        android:textColor="@color/white"
         android:text="返回"
         android:textSize="18sp"
         android:onClick="gohome"/>
@@ -20,6 +20,6 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:text="我的账单"
-        android:textSize="15sp"
+        android:textSize="20sp"
         android:textColor="#fff"/>
 </RelativeLayout>

@@ -96,5 +96,5 @@
             android:text="我的账单"
             android:background="@drawable/shape" />
     </LinearLayout>
-  
+
 </LinearLayout>
