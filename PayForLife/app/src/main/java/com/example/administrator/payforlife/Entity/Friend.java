@@ -34,4 +34,4 @@ public String getFriendtime() {
 public void setFriendtime(String friendtime) {
         this.friendtime = friendtime;
         }
-        }
+}

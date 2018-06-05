@@ -59,24 +59,27 @@ public class RegisterActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_registered:
                             String mail = etregistmail.getText().toString();
-                            final String username = etregistname.getText().toString();
+                            String username = etregistname.getText().toString();
                             String password = etregistpwd.getText().toString();
-                            String address = "http://10.7.85.132:8080/OkHttpServerForAndroid/register.action";
-                            OkHttpClient okHttpClient = new OkHttpClient();
+                            String address = "http://10.7.85.227:8080/OkHttpServerForAndroid/register.action";
                             FormBody.Builder builder = new FormBody.Builder();
                             builder.add("email",mail);
                             builder.add("username",username);
                             builder.add("password",password);
                             FormBody body = builder.build();
-                            Request request = new Request.Builder().post(body).url(address).build();
                             OkhttpUtil.sendOkHttpFormBodyRequest(address, body, new Callback() {
                                 @Override
                                 public void onFailure(Call call, IOException e) {
-                                    Toast.makeText(RegisterActivity.this,"请求失败",Toast.LENGTH_SHORT).show();
+                                    runOnUiThread(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            Toast.makeText(RegisterActivity.this,"请求失败",Toast.LENGTH_SHORT).show();
+                                        }
+                                    });
                                 }
 
                                 @Override
-                                public void onResponse(Call call, Response response) throws IOException {
+                                public void onResponse(Call call, final Response response) throws IOException {
                                     final String responseText = response.body().string();
                                     runOnUiThread(new Runnable() {
                                         @Override
@@ -85,12 +88,15 @@ public class RegisterActivity extends AppCompatActivity {
                                                 Toast.makeText(RegisterActivity.this,"注册成功",Toast.LENGTH_SHORT).show();
                                                 Intent intent1 = new Intent(getApplicationContext(),LoginActivity.class);
                                                 startActivity(intent1);
-                                            } else {
+                                            } else if (responseText.equals("registered")){
                                                 etregistmail.setText("");
                                                 etregistname.setText("");
                                                 etregistpwd.setText("");
                                                 Toast.makeText(RegisterActivity.this,"该用户已注册",Toast.LENGTH_SHORT).show();
-
+                                            } else if (responseText.equals("null")){
+                                                Toast.makeText(RegisterActivity.this,"邮箱，用户名和密码不能为空",Toast.LENGTH_SHORT).show();
+                                            } else {
+                                                Toast.makeText(RegisterActivity.this,"注册失败",Toast.LENGTH_SHORT).show();
                                             }
                                         }
                                     });
